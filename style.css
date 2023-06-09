@@ -1,0 +1,89 @@
+.urban-logo {
+    width: 100px;
+    height: 100px;   
+}
+
+#hair-boutique {
+    border-radius: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.our-services {
+    font-family: 'playfair',serif;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.insta {
+    font-family: 'playfair',serif;
+}
+
+.service-desc {
+    font-size: larger;
+}
+
+.services {
+    color: black;
+    margin: 1rem;
+    font-family: 'playfair',serif;
+}
+
+#view-price {
+    color: white;
+    background-color: darksalmon;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 3rem;
+}
+strong {
+    color: darksalmon;
+}
+
+#view-price2 {
+    color: white;
+    background-color: black;
+    border-radius: 0%;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+form {
+    background-color: rgba(233, 150, 122, 0.329);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+}
+
+.form-control {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+#Contact {
+    background-color: white;
+    color: darksalmon;
+    border-radius: 1rem;
+    width: 10rem;
+    font-weight: bold;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#copyright {
+    font-size: 10px;
+}
+
+
