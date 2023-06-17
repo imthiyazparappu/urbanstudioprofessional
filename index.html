@@ -210,15 +210,13 @@
         <div class="col-12">
           <h1 class="insta text-center">Contact Us More!</h1>
           <div class="forms">
-            <form method="post">
-              <div class="form-group">
-                <input type="name" class="form-control" id="name" placeholder="Enter your name">
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                <input type="number" class="form-control" id="text" placeholder="Enter your monile number">
+            <form class="form-contact" action="" method="POST">
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter your name">
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email">
+                <input name="number" type="number" class="form-control" id="number" placeholder="Enter your monile number">
                 <textarea name="notes" class="form-control" id="notes" placeholder="Notes..." cols="30"
                   rows="5"></textarea>
-                <button class="form-control" type="submit" id="Contact">Submit</button>
-              </div>
+                <button class="form-control" type="submit" id="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -246,6 +244,34 @@
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- ----smtp.js setup for email---- -->
+ <script>
+  const name =document.getElementById("name");
+  const email =document.getElementById("email");
+  const number =document.getElementById("number");
+  const notes =document.getElementById("notes");
+  const submit =document.getElementsByClassName("form-contact")[0];
+
+  submit.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    console.log("Clicked");
+
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "urbanstudioprofessional@gmail.com",
+    Password : "C047723AA828A7698423DAEA1FC7E458FB0D",
+    To : 'urbanstudioprofessional@gmail.com',
+    From : "urbanstudioprofessional@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+  })
+
+ </script>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
