@@ -65,7 +65,7 @@ form {
 .form-control {
     width: 70%;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: -1rem;
     border-radius: 1rem;
 }
 
